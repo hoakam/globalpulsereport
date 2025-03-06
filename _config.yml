@@ -1,0 +1,31 @@
+title: Global Pulse Report
+description: "Latest updates and insights on various topics."
+baseurl: "" # Correct for root domain deployment
+url: "https://hoakam.github.io/globalpulsereport" # Good
+theme: minima
+
+# IMPORTANT ADDITIONS
+timezone: Asia/Kolkata # Set your local timezone
+future: false # Hide posts with future dates
+collections:
+  posts:
+    output: true
+    permalink: /blog/:path/
+
+# Required for GitHub Pages
+plugins:
+  - jekyll-feed
+  - jekyll-paginate # Add this if using pagination
+
+# Security/performance settings
+markdown: kramdown
+safe: true
+
+# Explicitly exclude unnecessary files
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .gitignore
+  - .vscode
