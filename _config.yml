@@ -1,7 +1,13 @@
-# Before
+# _config.yml (Production)
+title: Global Pulse Report
+description: Your site description
 url: "https://hoakam.github.io"
-baseurl: "/globalpulsereport"
+baseurl: "/globalpulsereport" # Must match repository name
+permalink: /:year/:month/:day/:title/
+future: true # Show future-dated posts (if needed)
 
-# After (for local development)
-url: "" 
-baseurl: ""
+# Jekyll settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
